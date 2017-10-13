@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "674189875306",
+    "firebase_url": "https://indianmistry-2ce37.firebaseio.com",
+    "project_id": "indianmistry-2ce37",
+    "storage_bucket": "indianmistry-2ce37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674189875306:android:328e211661b2888b",
+        "android_client_info": {
+          "package_name": "com.example.apple.indianmistry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674189875306-9vvg7fuh6rn5fnls6k9sdm7sb00101j8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.apple.indianmistry",
+            "certificate_hash": "9319385579f0bc8ea6b37ea4ee7d533b5d78e8dd"
+          }
+        },
+        {
+          "client_id": "674189875306-t1j8phut8qoc76b9i4k9pmhaape5ghh6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU5pBMs0tyyklWecUH29phshB_Z5QB0lw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "674189875306-t1j8phut8qoc76b9i4k9pmhaape5ghh6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
