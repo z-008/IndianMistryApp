@@ -15,89 +15,85 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editTextName"
         android:layout_width="310dp"
         android:layout_height="50dp"
         android:layout_marginTop="43dp"
         android:background="@drawable/edittextstyle"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="Name"
         tools:layout_editor_absoluteX="79dp"
         tools:layout_editor_absoluteY="91dp"
-        android:layout_below="@+id/imageView4"
-        android:layout_alignStart="@+id/editText3" />
+        android:layout_below="@+id/imageViewLogo"
+        android:layout_alignStart="@+id/editTextMail"
+        android:layout_alignLeft="@+id/editTextMail" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editTextMob"
         android:layout_width="310dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/editText3"
+        android:layout_below="@+id/editTextMail"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="37dp"
         android:background="@drawable/edittextstyle"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Mob. No."
+        android:inputType="textNoSuggestions"
+        android:hint="Mob. No."
         tools:layout_editor_absoluteX="79dp"
         tools:layout_editor_absoluteY="164dp" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editTextMail"
         android:layout_width="310dp"
         android:layout_height="50dp"
         android:background="@drawable/edittextstyle"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Email ID"
+        android:inputType="textNoSuggestions"
+        android:hint="Email ID"
         tools:layout_editor_absoluteX="79dp"
         tools:layout_editor_absoluteY="235dp"
         android:layout_marginTop="36dp"
-        android:layout_below="@+id/editText"
-        android:layout_alignStart="@+id/editText2" />
+        android:layout_below="@+id/editTextName"
+        android:layout_alignStart="@+id/editTextMob"
+        android:layout_alignLeft="@+id/editTextMob" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonSignup"
         android:layout_width="170dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/editText2"
+        android:layout_below="@+id/editTextMob"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="51dp"
         android:background="@drawable/buttonstyleselector"
         android:text="Sign Up"
         android:textAllCaps="false"
-        android:textColor="@android:color/background_light" />
+        android:textColor="@android:color/background_light"
+        />
+        <!--android:onClick="sendCode"-->
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="170dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/editText2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="51dp"
-        android:background="@drawable/buttonstyleselector"
-        android:text="Sign Up"
-        android:textAllCaps="false"
-        android:textColor="@android:color/background_light" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imageViewLogo"
         android:layout_width="70dp"
         android:layout_height="70dp"
         app:srcCompat="@drawable/logo"
         android:layout_marginEnd="12dp"
         android:layout_marginTop="34dp"
         android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/button" />
+        android:layout_toStartOf="@+id/buttonSignup"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/buttonSignup" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView4"
+        android:layout_alignBottom="@+id/imageViewLogo"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="22dp"
         android:text="Indian Mistry"
@@ -106,23 +102,25 @@
         android:textStyle="bold" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/imageButtonfb"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_alignStart="@+id/button"
-        android:layout_below="@+id/button"
+        android:layout_alignStart="@+id/buttonSignup"
+        android:layout_below="@+id/buttonSignup"
         android:layout_marginTop="42dp"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/fb" />
+        app:srcCompat="@drawable/fb"
+        android:layout_alignLeft="@+id/buttonSignup" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/imageButtonG"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_alignEnd="@+id/button"
-        android:layout_alignTop="@+id/imageButton2"
+        android:layout_alignEnd="@+id/buttonSignup"
+        android:layout_alignTop="@+id/imageButtonfb"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/google" />
+        app:srcCompat="@drawable/google"
+        android:layout_alignRight="@+id/buttonSignup" />
 
     <TextView
         android:id="@+id/Logintv"
@@ -133,7 +131,57 @@
         android:textStyle="bold"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textSize="16sp"
-        android:layout_above="@+id/imageButton3"
+        android:layout_above="@+id/imageButtonG"
         android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editTextOTP"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/editTextName"
+        android:layout_alignTop="@+id/editTextName"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edittextstyle"
+        android:ems="10"
+        android:inputType="textNoSuggestions"
+        android:hint="OTP"
+        android:visibility="invisible"
+        android:layout_alignLeft="@+id/editTextName" />
+
+
+    <Button
+        android:id="@+id/buttonVerify"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/buttonSignup"
+        android:layout_alignTop="@+id/editTextMail"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/buttonstyleselector"
+        android:text="Verify"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:visibility="invisible"
+        android:layout_alignLeft="@+id/buttonSignup"
+        />
+        <!--android:onClick="verifyCode"-->
+
+
+    <Button
+        android:id="@+id/buttonResend"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/buttonVerify"
+        android:layout_alignTop="@+id/editTextMob"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/buttonstyleselector"
+        android:text="Resend"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:visibility="invisible"
+        android:layout_alignLeft="@+id/buttonVerify"
+        />
+        <!--android:onClick="resendCode"-->
+
+
 
 </RelativeLayout>
