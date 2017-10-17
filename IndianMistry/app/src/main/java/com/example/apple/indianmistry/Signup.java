@@ -86,8 +86,8 @@ public class Signup extends AppCompatActivity implements View.OnClickListener{
 
          buttonSignup.setOnClickListener(this);
          buttonVerify.setOnClickListener(this);
-      buttonResend.setOnClickListener(this);
-
+        buttonResend.setOnClickListener(this);
+        Logintv.setOnClickListener(this);
 
 
 
@@ -116,9 +116,9 @@ public class Signup extends AppCompatActivity implements View.OnClickListener{
             }
 
 
-            if(phoneNumber.length()<10)
+            if(phoneNumber.length()<13)
             {
-                Toast.makeText(this, "Length should be atleast 10 characters", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Length should be atleast 13 characters", Toast.LENGTH_SHORT).show();
                 return;
             }
 
@@ -266,6 +266,10 @@ public class Signup extends AppCompatActivity implements View.OnClickListener{
         if(view==buttonResend)
         {
             resendCode(view);
+        }
+        if(view==Logintv)
+        {
+            startActivity(new Intent(getApplicationContext(),Login.class));
         }
 
     }

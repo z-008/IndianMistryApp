@@ -45,63 +45,63 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="600dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView2"
         android:layout_marginTop="76dp"
         android:text="                    Instant Booking"
         android:textColor="@android:color/background_light"
-        android:textSize="24sp"
-        android:layout_below="@+id/imageView2"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="600dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/imageView2"
         android:layout_marginTop="120dp"
         android:text="                 Hassle Free Service"
         android:textColor="@android:color/background_light"
-        android:textSize="24sp"
-        android:layout_alignParentLeft="true" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="600dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/imageView2"
         android:layout_marginTop="162dp"
         android:text="                     Pay with Paytm"
         android:textColor="@android:color/background_light"
-        android:textSize="24sp"
-        android:layout_alignParentLeft="true" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="600dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/imageView2"
         android:layout_marginTop="202dp"
         android:text="                    All your Services"
         android:textColor="@android:color/background_light"
-        android:textSize="24sp"
-        android:layout_alignParentLeft="true" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="600dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/imageView2"
         android:layout_marginTop="244dp"
         android:text="                   Just a click away"
         android:textColor="@android:color/background_light"
-        android:textSize="24sp"
-        android:layout_alignParentLeft="true" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/textView6"
