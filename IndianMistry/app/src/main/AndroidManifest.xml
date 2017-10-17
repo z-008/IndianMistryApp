@@ -34,7 +34,9 @@
             android:label="Profile"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity android:name=".ybooking" />
-        <activity android:name=".rate"></activity>
+        <activity android:name=".rate" />
+        <activity android:name=".SchService" />
+        <activity android:name=".Booknow"></activity>
     </application>
 
 </manifest>

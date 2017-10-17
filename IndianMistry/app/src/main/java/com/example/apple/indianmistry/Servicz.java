@@ -26,11 +26,7 @@ public class Servicz extends AppCompatActivity
     static FirebaseAuth firebaseAuth;
 
     private ImageView imageViewplumber;
-    private ImageView imageViewelectric;
-    private ImageView imageViewcar;
-    private ImageView imageViewclean;
-    private ImageView imageViewphoto;
-    private ImageView imageViewDJ;
+    public String tag;
 
 
     @Override
@@ -40,15 +36,15 @@ public class Servicz extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         firebaseAuth = FirebaseAuth.getInstance();
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -72,31 +68,6 @@ public class Servicz extends AppCompatActivity
 
 
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//
-//        MenuInflater menuInflater =getMenuInflater();
-//        menuInflater.inflate(R.menu.main_menu,menu);
-//
-//        return super.onCreateOptionsMenu(menu);
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//
-//        if(item.getItemId()==R.id.logout);
-//        {
-//            firebaseAuth.signOut();
-//            // finish();
-//            startActivity(new Intent(getApplicationContext(),Register.class));
-//        }
-//
-//
-//
-//        return super.onOptionsItemSelected(item);
-//    }
-//
-//
 
 
     @Override
@@ -114,9 +85,7 @@ public class Servicz extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+
 
         if(item.getItemId()==R.id.logout);
         {
@@ -162,6 +131,12 @@ public class Servicz extends AppCompatActivity
 
     public void selected(View view)
     {
+        ImageView img = (ImageView) view;
+        tag = img.getTag().toString();
+
+        Intent intent = new Intent(Servicz.this, ServiceSelected.class);
+        intent.putExtra("tag", tag);
+        startActivity(intent);
 
     }
 

@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextClock;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.model.LatLng;
@@ -159,6 +160,7 @@ public class profile extends AppCompatActivity implements View.OnClickListener{
 
 
             databaseReference.child(firebaseUser.getUid()).child("UserInfo").setValue(user2);
+            Toast.makeText(this, "Edited Successfully!", Toast.LENGTH_SHORT).show();
         }
 
     }

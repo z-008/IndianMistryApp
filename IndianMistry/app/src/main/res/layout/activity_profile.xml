@@ -91,26 +91,26 @@
         android:id="@+id/editTextname"
         android:layout_width="310dp"
         android:layout_height="50dp"
+        android:layout_alignTop="@+id/textView11"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/edittextstyle"
         android:ems="10"
+        android:hint="Name"
         android:inputType="textPersonName"
-        android:text="Name"
-        android:visibility="invisible"
-        android:layout_alignTop="@+id/textView11"
-        android:layout_centerHorizontal="true" />
+        android:visibility="invisible" />
 
     <EditText
         android:id="@+id/editTextemail"
         android:layout_width="310dp"
         android:layout_height="50dp"
+        android:layout_alignLeft="@+id/editTextname"
+        android:layout_alignStart="@+id/editTextname"
+        android:layout_alignTop="@+id/textView12"
         android:background="@drawable/edittextstyle"
         android:ems="10"
+        android:hint="Mail ID"
         android:inputType="textPersonName"
-        android:text="Email"
-        android:visibility="invisible"
-        android:layout_alignTop="@+id/textView12"
-        android:layout_alignLeft="@+id/editTextname"
-        android:layout_alignStart="@+id/editTextname" />
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/buttonEditDone"
